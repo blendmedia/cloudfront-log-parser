@@ -48,8 +48,10 @@ Parse cloudfront access log lines with some extra intelligence.
     include_package_data=True,
     install_requires=[
         'six>=1.9.0,<2.0.0',
-        'cloudfront-edge-codes>=0.1.3',
         'user-agents>=1.0.0,<2.0.0',
+    ],
+    dependency_links=[
+        'http://github.com/blendmedia/cloudfront-edge-codes/'
     ],
     extras_require={
         'tests': tests_require,
